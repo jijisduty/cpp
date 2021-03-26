@@ -10,20 +10,20 @@ that the user will input) with:
 */
 
 
-const char* hello = "hey ";
+const char* hello = "hey "; 
 int n = 10;
 int main() {
-    for (int n; n<10; n++){
+    for (int n; n<10; n++){                                 //FOR LOOP
         cout << hello << n << endl;
     }
             cout << endl;
-    while (n){
+    while (n){                                              //WHILE LOOP
         n = n- 1;
         cout << hello << n << endl;
     }
 cout << endl;
 
-    do {
+    do {                                                    //DO WHILE LOOP
         cout << hello << n << endl;
         ++n;
     } while (n < 10);
