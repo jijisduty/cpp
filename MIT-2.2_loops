@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+/*
+Write a program that outputs “Hello, World!” n times (where n is a nonnegative integer
+that the user will input) with:
+• a for loop.
+• a while loop.
+• a do...while loop.
+*/
+
+
+const char* hello = "hey ";
+int n = 10;
+int main() {
+    for (int n; n<10; n++){
+        cout << hello << n << endl;
+    }
+            cout << endl;
+    while (n){
+        n = n- 1;
+        cout << hello << n << endl;
+    }
+cout << endl;
+
+    do {
+        cout << hello << n << endl;
+        ++n;
+    } while (n < 10);
+
+}
