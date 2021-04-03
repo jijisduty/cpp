@@ -1,0 +1,19 @@
+/*
+Write a C++ program to answer inquiries about student data.
+The program will display a menu that enables the users to choose whether they want to view all students ’records or view only the records of a specific student by the student’s id. See sample below.
+MENU
+
+
+          1. View all students’ records
+          2. View a student’s records by ID
+          3. Show the highest and the lowest final scores
+Please enter your choice: 1
+
+|StudentID | Quiz1 | Quiz2 | Mid-Term | Final |   ==================================================
+|1232          |  10    | 23       | 45             | 56     |    
+|2343          |  45      | 43     | 24             |  78    |
+|2343          |  34      | 45     | 45             | 45     |
+|3423          |  67      | 6       | 65             | 56     |
+
+Note: These records will be stored in a two-dimensional array.
+*/https://github.com/jijisduty/cpp
