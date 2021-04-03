@@ -22,7 +22,7 @@ If he/she input ‘y’, the program will prompt the user to choose the operatio
 2. Write a C++ program (using function overloaded) to sort 10 integer values, or 10 long values, or 10 double values.
 */
 
-
+/////////////////////////////////// Exercise 1: (Calculator)
 
 #include <iostream>
 using namespace std;
@@ -32,6 +32,8 @@ int main(){
 
     int x, y, z, result;
     char choice;
+
+
 
     start:
     cout << "MENU" << endl;
@@ -46,42 +48,45 @@ int main(){
     cin >> y;
     cin >> z;
 
+
+
     switch(x)
     {
         case 1:
            result = y + z;
-           cout <<  result << endl;
-           break;
+           cout << "Result: " <<  result << endl;
+           goto docontinue;
         case 2:
             result = y - z;
-            cout <<  result << endl;
-            break;
+            cout << "Result: " <<  result << endl;
+           goto docontinue;
         case 3:
             result = y * z;
-            cout <<  result << endl;
-            break;
+            cout << "Result: " <<  result << endl;
+           goto docontinue;
         case 4:
-        if(z != 0)
+        if(z != 0){
             result = y / z;
-            cout <<  result << endl;
-        else
+            cout << "Result: " <<  result << endl;  }
+        else{
             cout << "you can't do that" << endl;
-            break;
+            }
+           goto docontinue;
         case 5:
             result = y % z;
-            cout <<  result << endl;
-
-            break;
+            cout << "Result: " << result << endl;
+           goto docontinue;
 
         default:
             cout << "nope" << endl;
+            goto docontinue;
 
-
-    cout << "Continue?" << endl;
-    cin >> choice;
-
-        if(choice == 'y' || choice == 'y')
-            goto start;
     }
-}
 
+            docontinue:
+        cout << "Continue? Y/N" << endl;
+        cin >> choice;
+        if(choice == 'y' || choice == 'y'){
+        goto start;
+}
+}
