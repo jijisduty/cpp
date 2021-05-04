@@ -1,0 +1,26 @@
+//*
+Write a class having two private variables and one member function which will return the area of the rectangle.
+*//
+
+
+#include <iostream>
+
+class Recty
+{
+private:
+	int x, y, size;
+
+public:
+	void setSizeX(int valueX) { x = valueX; }
+	void setSizeY(int valueY) { y = valueY; }
+	int getSize() { return size = x * y; }
+};
+
+int main()
+{
+	Recty rectangle;
+	rectangle.setSizeX(6);
+	rectangle.setSizeY(5);
+	std::cout << rectangle.getSize() << std::endl;
+
+};
