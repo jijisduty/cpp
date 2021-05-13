@@ -1,0 +1,33 @@
+#include <iostream>
+
+
+class Entity
+{
+public:
+	float X, Y;
+	
+	Entity(float m, float n)
+	{
+		X = m;
+		Y = n;
+
+	}
+
+
+	void Print()
+	{
+		std::cout << X  << " " << Y << std::endl;
+	}
+
+private:
+};
+
+
+int main()
+{
+	Entity e(0.5f, 7.0f);
+	Entity f(3.0f, 5);
+	e.Print();
+	f.Print();
+
+}
