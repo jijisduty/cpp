@@ -1,0 +1,75 @@
+//this doesn't work, but here's a ref to your effort before you figured it out
+
+
+
+#include <iostream>
+#include <memory>
+#include <vector>
+
+using namespace std;
+
+vector<int> myVector;
+
+
+class Solution {
+public:
+	bool isPalindrome(int x) {
+
+		if (x < 0 || x % 10 == 0 && x != 0)   //excluding negavives, numbers ending with 0, and 0.
+		{
+			return false;
+		}
+
+		/*
+		int  num[10], i;
+		int numLength = *(&num + 1) - num;
+		if (x > 0 && x%10 != 0)
+		{
+			for (i = 0; i < numLength; i++) {
+						
+			num[i] = x % 10;
+			x = x / 10;				
+			}
+			//std::cout << num << std::endl;;
+			cout << numLength << endl;
+
+		}
+
+		*/
+		
+		// VECTOR START:
+
+
+
+		int vecLength = myVector.size();
+		int i;
+
+		if (x > 0 && x % 10 != 0)
+		{
+			for (i = 0; i < vecLength; i++)
+			{
+				int myVector = x % 10;
+				x = x / 10;
+			}
+
+		}		
+
+		}
+
+	
+		//VECTOR END;
+
+	};
+
+int main()
+{
+	//int n;
+	std::cout << "Enter an integer and I'll tell you if its a palindrome" << std::endl;
+	int input;
+	myVector.push_back(input);
+	cin >> input;
+	//std::cin >> n ;
+	Solution na;
+	std::cout << na.isPalindrome(n) << std::endl;
+	
+}
