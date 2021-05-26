@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+int reverseNum(int x)
+{
+	int revX = 0;
+	while (x > 0)
+	{
+		revX = revX * 10 + x % 10;
+		x = x / 10;
+	}
+	return revX;
+}
+
+
+int main()
+{
+
+	cout << "enter a number to check if palindrome" << endl;
+	int input;
+	cin >> input;
+
+	if (input < 0 || input % 10 == 0 && input != 0)   //excluding negavives, numbers ending with 0.
+	{
+		cout << "false" << endl;
+	}
+	
+
+	int output = reverseNum(input);
+
+	if (input == output)
+	{
+		cout << "true" << endl;
+	}
+
+	if (input != output)
+	{
+		cout << "false" << endl;
+	}
+}
