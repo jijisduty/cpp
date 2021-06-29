@@ -1,0 +1,37 @@
+/*
+1. נתון משתנה בעל 8 סיביות, יש לכתוב פונקציה בשפת סי
+
+שתקבל את המשתנה ותחזיר את ההשתקפות של אותו משתנה. דוגמא:
+
+עבור קלט של:
+
+001011001
+
+הפלט יהיה:
+
+100110100 */
+
+#include <iostream>
+
+using namespace std;
+
+
+
+int revInteger(int inputInt)
+{
+	int revInt = 0;
+		while (inputInt > 0)
+		{
+			revInt = revInt *10 + inputInt % 10; // tmp = 4 // tmp = 4*10 + 3 = 43 // tmp = 43*10 + 2 = 432 // tmp = 432*10 + 1 = 4321
+			inputInt = inputInt / 10;    // abc = 123
+		}
+		return revInt;
+}
+
+int main()
+{
+	int abc;
+	cin >> abc;
+	cout << revInteger(abc);
+	
+}
